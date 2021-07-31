@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .text-center {
+            text-align: center;
+            font-size: 2rem;
+        }
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .container-left {
+            padding: 0px 20px;
+            width: 50%;
+            border-right: 1px solid gray;
+        }
+
+        .contact-form input {
+            width: 95%;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px;
+            background: none;
+            background: rgba(255, 255, 255, 0.08);
+            /* border: 1px solid black; */
+            border-bottom: 2px solid seagreen;
+        }
+
+        .container-right {
+            width: 50%;
+            padding: 0px 20px;
+        }
+
+        #message {
+            display: block;
+            height: 183px;
+            width: 600px;
+            resize: none;
+        }
+
+        .contact {
+            display: flex;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .contact-form{
+            padding: 10px 0px;
+        }
+        .contact-details{
+            padding: 10px 0px;
+        }
+    </style>
+    <div class="contact-container">
+    <h1 class="text-center" style="background-color: #89FDD2; font-size: 4rem; padding: 10px 0px;">Contact Us</h1>
+        <div class="contact">
+            <div class="container-left">
+                <h2 class="text-center">Send Us An Email</h2>
+                <div class="contact-form">
+                    <form action="/action_page.php">
+                        <label for="fname">Name*</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br><br>
+                        <label for="Email">Email</label><br>
+                        <input type="email" id="Email" name="email" value=""><br><br>
+                        <label for="Contact">Contact Number</label><br>
+                        <input type="text" id="Contact" name="Contact" value=""><br><br>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something.."></textarea><br>
+                        <br>
+                        <button type="submit" class="">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container-right">
+                <h2 class="text-center">Contact Details</h2>
+                <div class="contact-details">
+                <div>phone:+918792326522 <br>
+                (monday-saturday 9:30am to 9:30pm) <br>
+                (sunday 6pm to 9:30pm)
+                address:</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
