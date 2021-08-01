@@ -1,0 +1,118 @@
+:root{
+    --main-bg-color: #ffac12;
+    --font1: 'Benne', serif;
+    --font2: 'Lato', sans-serif;
+}
+
+.display{
+    display: flex;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.font1{
+    font-family: var(--font1);
+}
+
+.font2{
+    font-family: var(--font2);
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.btn{
+    padding: 7px 16px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff9933;
+    width: 7rem;
+    cursor: pointer;
+}
+
+.contact-btn{
+    text-align: center;
+    margin: 13px auto;
+    padding: 2px 0px;
+}
+
+
+.btn:hover{
+    cursor: pointer;
+}
+
+[type = "search"]{
+    appearance: textfield;
+}
+
+.srh-btn{
+    border-radius: 0px 4px 4px 0px;
+    padding: 0px 6px;
+}
+
+
+
+
+
+
+
+.dropdown-content hr{
+    font-weight: normal;
+    opacity: 0.1;
+}
+
+.icon{
+    font-size: 4rem;
+}
+
+/* .jqwk{
+    column-gap: 2.5rem;
+} */
+.cvRV{
+    display: grid;
+    -moz-box-align: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    /* column-gap: 0.5rem; */
+    cursor: pointer;
+}
+
+svg{
+    vertical-align: middle;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+.icons{
+    padding: 0px 10px;
+}
+
+.WhInfa a{
+    text-decoration: none;
+}
+
+.my-2{
+    font-size: 2rem;
+    text-align: center;
+    user-select: none;
+}
+
+.add-btn{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color:black;
+    text-align: center;
+    cursor: pointer;
+    width: 70%;
+    font-size: 18px;
+    margin: auto;
+    border-radius: 10px;
+  }
