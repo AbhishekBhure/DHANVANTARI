@@ -40,6 +40,17 @@
     padding: 2px 0px;
 }
 
+.cnt-btn{
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    background-color: #fff;
+}
+.cnt-btn:hover{
+    background-color: #ff9933;
+    transition: all 0.7s ease;
+    color: white;
+}
+
 
 .btn:hover{
     cursor: pointer;
@@ -51,20 +62,8 @@
 
 .srh-btn{
     border-radius: 0px 4px 4px 0px;
+    padding: 0px 6px;
 }
-
-.search-icon{
-    padding-right: 3px;
-}
-
-/* .cart-icon{
-    padding-right: 3px;
-}
-
-.icon-label{
-    display: inline;
-} */
-
 
 
 .dropdown-content hr{
@@ -76,15 +75,11 @@
     font-size: 4rem;
 }
 
-.jqwk{
-    /* column-gap: 2.5rem; */
-}
 .cvRV{
     display: grid;
     -moz-box-align: center;
     align-items: center;
     grid-template-columns: auto auto;
-    /* column-gap: 0.5rem; */
     cursor: pointer;
 }
 
@@ -104,13 +99,6 @@ svg:not(:root) {
 }
 
 
-/* .drop-btn{
-    font-size:16px;
-    font-family: var(--font2);
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-} */
+
 
 

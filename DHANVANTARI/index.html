@@ -26,9 +26,21 @@
             </a>
             <div class="search display">
                 <input type="search" placeholder="Search for products..">
-                <button class="srh-btn btn">
-                    <i class="fa fa-search search-icon"></i>
-                    Search
+                <button class="srh-btn btn icon-search-label">
+                    <div class="search-label cvRV">
+                        <div class="search-icon-container">
+                            <i class="search-icon">
+                                <svg 
+                                     focusable="false" width="21px" height="21px"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392l.604.646l2.121-2.121l-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5s5 2.243 5 5s-2.243 5-5 5z"
+                                        fill="#000000" />
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="icon-label">Search</div>
+                    </div>
                 </button>
             </div>
             <div class="ca-gin display">
@@ -36,7 +48,7 @@
                     <div class="cart-label cvRV">
                         <div class="cart-icon-container cursor">
                             <i class="cart-icon">
-                                <svg aria-hidden="true" focusable="" width="25px" height="25px" viewBox="0 0 24 24">
+                                <svg aria-hidden="true" focusable="" width="22px" height="22px" viewBox="0 0 24 24">
                                     <path
                                         d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1V2m6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5H16z"
                                         fill="#000000" />
@@ -50,14 +62,14 @@
                     <div class="login-label cvRV">
                         <div class="login-icon-container cursor">
                             <i class="login-icon">
-                                <svg aria-hidden="true" focusable="" width="20px" height="20px" viewBox="0 0 448 512">
+                                <svg aria-hidden="true" focusable="" width="19px" height="19px" viewBox="0 0 448 512">
                                     <path
                                         d="M313.6 304c-28.7 0-42.5 16-89.6 16c-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4c14.6 0 38.3 16 89.6 16c51.7 0 74.9-16 89.6-16c47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0S80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96s-96-43.1-96-96s43.1-96 96-96z"
                                         fill="#000000" />
                                 </svg>
                             </i>
                         </div>
-                        <div class="icon-label">Cart</div>
+                        <div class="icon-label">Login</div>
                     </div>
                 </div>
             </div>
@@ -78,11 +90,13 @@
                             <a href="">Body Lotion</a>
                             <hr>
                             <a href="#">Body</a>
+                            <hr>
                             <a href="">Body Wash</a>
                             <hr class="line">
                             <a href="">Body Lotion</a>
                             <hr>
                             <a href="#">Body</a>
+                            <hr>
                             <a href="">Body Wash</a>
                             <hr class="line">
                             <a href="">Body Lotion</a>
@@ -101,11 +115,13 @@
                             <a href="">Body Lotion</a>
                             <hr>
                             <a href="#">Body</a>
+                            <hr>
                             <a href="">Body Wash</a>
                             <hr>
                             <a href="">Body Lotion</a>
                             <hr>
                             <a href="#">Body</a>
+                            <hr>
                             <a href="">Body Wash</a>
                             <hr>
                             <a href="">Body Lotion</a>
@@ -123,6 +139,7 @@
                             <a href="">Body Lotion</a>
                             <hr>
                             <a href="#">Body</a>
+                            <hr>
                             <a href="">Body Wash</a>
                             <hr>
                             <a href="">Body Lotion</a>
@@ -140,6 +157,7 @@
                             <a href="">Body Lotion</a>
                             <hr>
                             <a href="#">Body</a>
+                            <hr>
                             <a href="">Body Wash</a>
                             <hr>
                             <a href="">Body Lotion</a>
@@ -157,16 +175,16 @@
     <div class="slider">
         <!-- <-- fade and slides -->
         <div class="myslide fade">
-            <img src="/img/slide-1.png" style="width: 100%; height: 100%;">
+            <img src="/img/slide1.jpg" style="width: 100%; height: 100%;">
         </div>
         <div class="myslide fade">
-            <img src="/img/slide-2.png" style="width: 100%; height: 100%;">
+            <img src="/img/slide-2.jpg" style="width: 100%; height: 100%;">
         </div>
         <div class="myslide fade">
-            <img src="/img/slide-3.png" style="width: 100%; height: 100%;">
+            <img src="/img/slide-3.jpg" style="width: 100%; height: 100%;">
         </div>
         <div class="myslide fade">
-            <img src="/img/slide-4.png" style="width: 100%; height: 100%;">
+            <img src="/img/slide-4.jpg" style="width: 100%; height: 100%;">
         </div>
         <div class="myslide fade">
             <img src="/img/slide1.jpg" style="width: 100%; height: 100%;">
@@ -229,7 +247,7 @@
                 <div class="foot-right">
                     Have Queries or Concern? Contact US
                     <div class="contact-btn">
-                        <a href="/contact.html"><button class="btn">Contact Us</button></a>
+                        <a href="/contact.html"><button class="cnt-btn btn">Contact Us</button></a>
                     </div>
                 </div>
             </div>

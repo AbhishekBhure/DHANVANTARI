@@ -60,7 +60,6 @@ nav{
 }
 .search-label{
     grid-area: 1 / 1;
-    /* font-weight: bold; */
 }
 .cvRV .search-icon-container{
     position: relative;
@@ -111,30 +110,29 @@ nav{
 
 .cart-label{
     grid-area: 1 / 1;
-    font-weight: bold;
 }
 
 .login-label{
     grid-area: 1 / 1;
-    font-weight: bold;
 }
 
 
 .cvRV .cart-icon-container{
     position: relative;
-    width: 17px;
+    width: 19px;
 }
 
 
 .cvRV .login-icon-container{
     position: relative;
-    width: 13px;
+    width: 23px;
 }
 
 .cvRV .icon-label{
     display: revert;
     padding-top: 3px;
-    font-size: 17px;
+    font-size: 1.2em;
+    letter-spacing: 0.04em;
     line-height: 1.4em;
     color: #000;
 }
@@ -143,8 +141,6 @@ nav{
 /* Navbar two */
 #nav-2{
     width: 80vw;
-    /* background-color: red; */
-    border: 1px solid white;
 }
 
 .main-menu{
@@ -198,7 +194,7 @@ nav{
     transition: 0.4s;
 }
 
-.category .dropdown span:hover::before{
+.category .dropdown:hover span::before{
     width: 100%;
 }
 
@@ -237,10 +233,10 @@ nav{
     display: block;
 }
 
-/* css for cards */
+/* CSS for cards */
 .third{
     max-width: 100%;
-    background-color: #dafff3;
+    background-color: #f6fffd;
   }
 
 .cards{
@@ -255,7 +251,7 @@ nav{
 .card-item{
     border: 1px solid gray;
     display: inline;
-    height: 450px;
+    height: 400px;
     width: 250px;
     padding: 4px;
     margin: 0px 10px;
@@ -266,7 +262,7 @@ nav{
 .card-item img{
     position: relative;
     padding: 5px 10px;
-     width: 92%; 
+    width: 92%; 
     height: 250px;
     object-fit: cover;
     vertical-align: middle;
@@ -275,8 +271,14 @@ nav{
 .card-item:hover {
     box-shadow: 0 10px 13px 0 rgba(0,0,0,.2),
     0 10px 13px 0 rgba(0,0,0,.2);
-  transition: all 1s ease;
+    transition: all 1s ease;
 }
+
+.card-item .add-btn:hover{
+    background-color: #ff9933;
+    transition: all .7s ease;
+}
+
 
 .lines{
     margin: 10px 20px;
@@ -284,9 +286,77 @@ nav{
   }
   
 .lines p{
-    padding: 6px 4px;
+    padding: 3px 4px;
     font-size: 17px;
     font-family: 'Amiri', serif;
 }
+/* css for cards end */
 
-  /* css for cards end */
+/* Footer */
+.footer{
+    background-color: #141414;
+}
+
+/* footer top */
+.foot-top{
+    position: relative;
+    display: flex;
+    margin: 0px 40px;
+}
+.foot-container{
+    padding: 8px 0px;
+    margin: 7px 0px;
+}
+.foot-col-hd{
+    color: whitesmoke;
+    font-family: none;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.row{
+    display: flex;
+    margin: 2px 0px;
+    padding: 10px 0px;
+    
+}
+.foot-col{
+    padding: 0px 25px;
+    margin: 0px 30px;
+    
+}
+.foot-li{
+    list-style: none;
+    padding: 3px 0px;
+    margin: 3px 0px;
+}
+.footer li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.foot-right{
+    position: absolute;
+    /* background-color: yellow; */
+    color: whitesmoke;
+    top: 10px;
+    right: 50px;
+    word-spacing: 2px;
+    padding: 8px 0px;
+    margin: 12px 0px;
+}
+
+/* Footer bottom */
+.foot-bottom{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.foot-bottom h3{
+    position: relative;
+    word-spacing: 2px;
+}
+
+.heart{
+    position: absolute;
+    margin-top: 0px;
+}
