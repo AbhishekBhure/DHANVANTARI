@@ -119,7 +119,7 @@ nav{
 
 .cvRV .cart-icon-container{
     position: relative;
-    width: 19px;
+    width: 23px;
 }
 
 
@@ -137,6 +137,9 @@ nav{
     color: #000;
 }
 
+.icon-cart-label a, .icon-login-label a{
+    text-decoration: none;
+}
 
 /* Navbar two */
 #nav-2{

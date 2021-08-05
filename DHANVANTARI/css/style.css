@@ -112,7 +112,7 @@ nav{
 }
 .cvRV .cart-icon-container{
     position: relative;
-    width: 19px;
+    width: 23px;
 }
 .cvRV .login-icon-container{
     position: relative;
@@ -125,6 +125,10 @@ nav{
     letter-spacing: 0.04em;
     line-height: 1.4em;
     color: #000;
+}
+
+.icon-cart-label a, .icon-login-label a{
+    text-decoration: none;
 }
 
 

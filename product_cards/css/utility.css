@@ -140,3 +140,21 @@ svg:not(:root) {
     margin: auto;
     border-radius: 5px;
   }
+
+.cart-number{
+    position: absolute;
+    left: 11px;
+    bottom: 16px;
+    font-size: 0.6em;
+    background-color: #ff9933;
+    color: #141414;
+    border-radius: 50%;
+    display: grid;
+    height: 15px;
+    width: 15px;
+    place-items: center;
+    /* margin: auto 0px; */
+    text-align: center;
+    line-height: 1.2em;
+    /* visibility:hidden; */
+}
