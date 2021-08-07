@@ -47,7 +47,7 @@
 }
 .cnt-btn:hover{
     background-color: #ff9933;
-    transition: all 0.7s ease;
+    transition: all 0.5s ease;
     color: white;
 }
 
@@ -110,10 +110,8 @@ svg:not(:root) {
     height: 15px;
     width: 15px;
     place-items: center;
-    /* margin: auto 0px; */
     text-align: center;
     line-height: 1.2em;
-    /* visibility:hidden; */
 }
 
 

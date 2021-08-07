@@ -204,12 +204,25 @@ nav{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 60;
 }
+.dropdown-content a:hover::before{
+    position: absolute;
+    content: '\2B9E';
+    left: 0;
+    padding-left: 10px;
+    font-size: 12px;
+}
 .dropdown-content a {
+    position: relative;
     color:black;
     padding: 6px 0px;
     padding-left: 20px;
     text-decoration: none;
     display: block;
+}
+.dropdown-content a:hover{
+    background-color: rgb(239, 252, 247);
+    transition: all 0.39s ease;
+    padding-left: 30px;
 }
 .dropdown:hover .dropdown-content{
     display: block;
@@ -232,16 +245,16 @@ nav{
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
-	font-size: 50px;
+	font-size: 80px;
 	padding: 15px;
 	cursor: pointer;
-	color: #fff;
+	color: #00a7ff;
 	transition: 0.1s;
 	user-select: none;
 }
 
 .prev:hover, .next:hover{
-	color: #00a7ff; /* blue */
+	color: #ff9933; /* blue */
 }
 .next{
 	right: 0;

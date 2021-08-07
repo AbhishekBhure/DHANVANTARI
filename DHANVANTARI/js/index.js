@@ -2,7 +2,7 @@ const myslide = document.querySelectorAll('.myslide');
 let counter = 1;
 slidefun(counter);
 
-let timer = setInterval(autoSlide, 8000);
+let timer = setInterval(autoSlide, 4000);
 function autoSlide() {
 	counter += 1;
 	slidefun(counter);
@@ -15,7 +15,7 @@ function plusSlides(n) {
 
 function resetTimer() {
 	clearInterval(timer);
-	timer = setInterval(autoSlide, 8000);
+	timer = setInterval(autoSlide, 4000);
 }
 
 function slidefun(n){
