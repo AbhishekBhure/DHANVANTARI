@@ -97,11 +97,50 @@ svg:not(:root) {
 .WhInfa a{
     text-decoration: none;
 }
+.my-2{
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    user-select: none;
+}
 
+.third .my-2::before{
+    left: 495px;
+    transform: translateY(-50%);
+}
+
+.third .my-2::after{
+    right: 495px;
+    transform: translateY(-50%);
+}
+
+.third .my-2::after, .third .my-2::before{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    width: 120px;
+    height: 2px;
+}
+
+.add-btn{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color:#141414;
+    text-align: center;
+    cursor: pointer;
+    width: 70%;
+    font-size: 18px;
+    margin: auto;
+    border-radius: 5px;
+  }
 .cart-number{
     position: absolute;
-    left: 11px;
-    bottom: 16px;
+    left: 65px;
+    bottom: 26px;
     font-size: 0.6em;
     background-color: #ff9933;
     color: #141414;
@@ -113,6 +152,58 @@ svg:not(:root) {
     text-align: center;
     line-height: 1.2em;
 }
+
+.nav-mb-bur_srhbtn{
+    display: none;
+}
+
+.category .side-menu-arrow1, .category .side-menu-arrow2, .category .side-menu-arrow3, .category .side-menu-arrow4{
+    display: none;
+}
+
+.change .side-menu-arrow1{
+    transform: rotate(90deg);
+    transition: transform .2s ease;
+}
+.change .side-menu-arrow2{
+    transform: rotate(90deg);
+    transition: transform .2s ease;
+}
+.change .side-menu-arrow3{
+    transform: rotate(90deg);
+    transition: transform .2s ease;
+}
+.change .side-menu-arrow4{
+    transform: rotate(90deg);
+    transition: transform .2s ease;
+}
+
+/* footer drop */
+.foot-arrow1, .foot-arrow2, .foot-arrow3{
+    position: absolute;
+    top: -6px;
+    right: 8px;
+    font-size: 19px;
+    font-weight: 100;
+    user-select: none;
+}
+
+
+
+.change .foot-arrow1{
+    transform: rotate(90deg);
+    transition: transform .2s ease-in-out;
+}
+.change .foot-arrow2{
+    transform: rotate(90deg);
+    transition: transform .2s ease;
+}
+.change .foot-arrow3{
+    transform: rotate(90deg);
+    transition: transform .2s ease;
+}
+
+
 
 
 

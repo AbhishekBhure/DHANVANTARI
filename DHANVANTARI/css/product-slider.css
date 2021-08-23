@@ -120,7 +120,7 @@ text-align: right;
 .card-item:hover, .card-item-two:hover, .card-item-three:hover {
     box-shadow: 0 10px 13px 0 rgba(0,0,0,.2),
     0 10px 13px 0 rgba(0,0,0,.2);
-    transition: all 1s ease;
+    transition: all 0.4s ease;
 }
 
 .card-item .card-item-two .card-item-three, .add-btn:hover{
@@ -132,6 +132,9 @@ text-align: right;
 .lines{
     margin: 10px 20px;
     padding: 5px;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
   }
   
 .lines p{

@@ -5,25 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/579a73bffb.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/utility.css">
-    <link rel="stylesheet" href="css/resp.css">
-    <link rel="stylesheet" href="css/product-slider.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <title>DHANVANTARI</title>
+    <link rel="stylesheet" href="/DHANVANTARI/css/style.css">
+    <link rel="stylesheet" href="/DHANVANTARI/css/utility.css">
+    <link rel="stylesheet" href="/DHANVANTARI/css/resp.css">
+    <title>Products_cards</title>
 </head>
 
 <body>
-
     <!-- Navigation Bar -->
     <nav>
         <!-- Navigation one -->
         <div id="nav-1" class="m-auto">
             <div class="nav-mb-bur_srhbtn">
-                <div id="burger" class="burger" onclick="noscroll()">
+                <div class="burger">
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="line"></div>
@@ -122,15 +116,15 @@
             </button>
         </div>
         <!-- Navigation two -->
-        <div id="nav-2" class="side-menu-mb m-auto">
+        <div id="nav-2" class="m-auto">
             <ul class="main-menu">
                 <li class="category-home">
                     <a href="/">Home</a>
                 </li>
-                <li class="category" id="dropmenuone">
-                    <div class="dropdown" id="dropdownone">
-                        <span>Body</span><span class="side-menu-arrow1">&#155;</span>
-                        <div class="dropdown-content" id="dropdown-content-one">
+                <li class="category"><span class="side-menu-arrow1">&#155;</span>
+                    <div class="dropdown">
+                        <span>Body</span>
+                        <div class="dropdown-content">
                             <a href="">Body Wash</a>
                             <hr class="line">
                             <a href="">Body Lotion</a>
@@ -152,10 +146,10 @@
 
                     </div>
                 </li>
-                <li class="category" id="dropmenutwo">
-                    <div class="dropdown" id="dropdowntwo">
-                        <span>Beauty</span><span class="side-menu-arrow2">&#155;</span>
-                        <div class="dropdown-content" id="dropdown-content-two">
+                <li class="category"><span class="side-menu-arrow2">&#155;</span>
+                    <div class="dropdown">
+                        <span>Beauty</span>
+                        <div class="dropdown-content">
                             <a href="">Body Wash</a>
                             <hr>
                             <a href="">Body Lotion</a>
@@ -176,10 +170,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="category" id="dropmenuthree">
-                    <div class="dropdown" id="dropdownthree">
-                        <span>Hairs</span><span class="side-menu-arrow3">&#155;</span>
-                        <div class="dropdown-content" id="dropdown-content-three">
+                <li class="category"><span class="side-menu-arrow3">&#155;</span>
+                    <div class="dropdown">
+                        <span>Hairs</span>
+                        <div class="dropdown-content">
                             <a href="">Body Wash</a>
                             <hr>
                             <a href="">Body Lotion</a>
@@ -194,10 +188,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="category" id="dropmenufour">
-                    <div class="dropdown" id="dropdownfour">
-                        <span>Body</span><span class="side-menu-arrow4">&#155;</span>
-                        <div class="dropdown-content" id="dropdown-content-four">
+                <li class="category"><span class="side-menu-arrow4">&#155;</span>
+                    <div class="dropdown">
+                        <span>Body</span>
+                        <div class="dropdown-content">
                             <a href="">Body Wash</a>
                             <hr>
                             <a href="">Body Lotion</a>
@@ -217,251 +211,88 @@
     </nav>
     <!-- Navigation end -->
 
-    <!-- Slider Container -->
-    <div class="slider">
-        <!-- <-- fade and slides -->
-        <div class="myslide fade">
-            <img src="/DHANVANTARI/img/slide1.jpg" style="width: 100%; height: 100%;">
-        </div>
-        <div class="myslide fade">
-            <img src="/DHANVANTARI/img/slide-2.jpg" style="width: 100%; height: 100%;">
-        </div>
-        <div class="myslide fade">
-            <img src="/DHANVANTARI/img/slide-3.jpg" style="width: 100%; height: 100%;">
-        </div>
-        <div class="myslide fade">
-            <img src="/DHANVANTARI/img/slide-4.jpg" style="width: 100%; height: 100%;">
-        </div>
-        <div class="myslide fade">
-            <img src="/DHANVANTARI/img/slide-5.jpg" style="width: 100%; height: 100%;">
-        </div>
-
-        <!-- onclick js -->
-        <a class="prev" onclick="plusSlides(-1)">&#139;</a>
-        <a class="next" onclick="plusSlides(1)">&#155;</a>
-    </div>
-    <!-- Slider Container end -->
-
-    <!-- Product-Slider-01 -->
-    <div class="product-carousel">
-        <div class="product-slider">
-            <div class="carousel-title">
-                <h1 class="carousel-hd">
-                    <span>Body</span>
-                </h1>
-            </div>
-            <span class="product-carousel-btn">&#139;</span>
-            <span onclick="myFunction" id="bts" class="product-carousel-btn">&#155;</span>
-            <span onclick="location.href = 'product.html';" id="link-btn" class="product-carousel-btn">&#155;</span>
-            <span id="more">More</span>
-            <div class="cards resp-cards">
+    <!-- Product-cards -->
+    <section class="third">
+        <h2 class="my-2">Body</h2>
+            <div class="cards resp_cards">
                 <div class="card-item">
                     <img src="/img/baidyanathpic1.jpg" alt>
                     <div class=" lines">
                         <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 01</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-
-                <div class="card-item">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 02</p>
+                        <p class="text-center my-1">Ceat bat Hitman bat</p>
                         <p class="text-center my-1">20% off</p>
                         <p><button class="add-btn">Add to cart</button></p>
                     </div>
                 </div>
                 <div class="card-item">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
+                    <img src="/img/card3.png" alt="">
+                    <div class="lines">
                         <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 03</p>
+                        <p class="text-center my-1">Ceat bat Hitman bat</p>
                         <p class="text-center my-1">20% off</p>
                         <p><button class="add-btn">Add to cart</button></p>
                     </div>
                 </div>
                 <div class="card-item">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
+                    <img src="img/card4.png" alt="">
+                    <div class="lines">
                         <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 04</p>
+                        <p class="text-center my-1">Ceat bat Hitman bat</p>
                         <p class="text-center my-1">20% off</p>
                         <p><button class="add-btn">Add to cart</button></p>
                     </div>
                 </div>
                 <div class="card-item">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
+                    <img src="img/card4.png" alt="">
+                    <div class="lines">
                         <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 05</p>
+                        <p class="text-center my-1">Ceat bat Hitman bat</p>
                         <p class="text-center my-1">20% off</p>
                         <p><button class="add-btn">Add to cart</button></p>
                     </div>
                 </div>
-                <div class="card-item">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 06</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
+            </div>
+        <div class="cards resp_cards">
+            <div class="card-item">
+                <img src="/img/card2.png" alt="">
+                <div class="lines">
+                    <hr>
+                    <p class="text-center my-1">Ceat bat Hitman bat</p>
+                    <p class="text-center my-1">20% off</p>
+                    <p><button class="add-btn">Add to cart</button></p>
+                </div>
+            </div>
+            <div class="card-item">
+                <img src="/img/card3.png" alt="">
+                <div class="lines">
+                    <hr>
+                    <p class="text-center my-1">Ceat bat Hitman bat</p>
+                    <p class="text-center my-1">20% off</p>
+                    <p><button class="add-btn">Add to cart</button></p>
+                </div>
+            </div>
+            <div class="card-item">
+                <img src="img/card4.png" alt="">
+                <div class="lines">
+                    <hr>
+                    <p class="text-center my-1">Ceat bat Hitman bat</p>
+                    <p class="text-center my-1">20% off</p>
+                    <p><button class="add-btn">Add to cart</button></p>
+                </div>
+            </div>
+            <div class="card-item">
+                <img src="img/card4.png" alt="">
+                <div class="lines">
+                    <hr>
+                    <p class="text-center my-1">Ceat bat Hitman bat</p>
+                    <p class="text-center my-1">20% off</p>
+                    <p><button class="add-btn">Add to cart</button></p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Product-Slider-01 END!! -->
+    </section>
+    <!-- Product-cards end -->
 
-    <!-- Product-Slider-02 -->
-    <div class="product-carousel">
-        <div class="product-slider">
-            <div class="carousel-title">
-                <h1 class="carousel-hd">
-                    <span>Body</span>
-                </h1>
-            </div>
-            <span class="product-carousel-btn-two">&#139;</span>
-            <span onclick="myFunction" id="bts-two" class="product-carousel-btn-two">&#155;</span>
-            <span onclick="location.href = 'products.html';" id="link-btn-two"
-                class="product-carousel-btn-two">&#155;</span>
-            <span id="more">More</span>
-            <div class="cards resp-cards">
-                <div class="card-item-two">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 01</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-
-                <div class="card-item-two">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 02</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-                <div class="card-item-two">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 03</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-                <div class="card-item-two">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 04</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-                <div class="card-item-two">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 05</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-                <div class="card-item-two">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 06</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Product-Slider-02 END!! -->
-
-    <!-- Product-Slider-03 -->
-    <div class="product-carousel">
-        <div class="product-slider">
-            <div class="carousel-title">
-                <h1 class="carousel-hd">
-                    <span>Body</span>
-                </h1>
-            </div>
-            <span class="product-carousel-btn-three">&#139;</span>
-            <span onclick="myFunction" id="bts-three" class="product-carousel-btn-three">&#155;</span>
-            <span onclick="location.href = 'products.html';" id="link-btn-three"
-                class="product-carousel-btn-three">&#155;</span>
-            <span id="more">More</span>
-            <div class="cards resp-cards">
-                <div class="card-item-three">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 01</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-
-                <div class="card-item-three">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 02</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-                <div class="card-item-three">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 03</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-                <div class="card-item-three">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 04</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-                <div class="card-item-three">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 05</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-                <div class="card-item-three">
-                    <img src="/img/baidyanathpic1.jpg" alt>
-                    <div class=" lines">
-                        <hr>
-                        <p class="text-center my-1">Ceat bat Hitman bat 06</p>
-                        <p class="text-center my-1">20% off</p>
-                        <p><button class="add-btn">Add to cart</button></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Product-Slider-03 END!! -->
 
     <!-- Footer -->
     <footer>
@@ -469,11 +300,11 @@
             <div class="foot-top">
                 <div class="foot-container">
                     <div class="row">
-                        <div class="foot-col" id="foot-drop1">
-                            <h3 class="foot-col-hd" onclick="footDropDown()">
-                                <span>Usefull Links</span><span class="foot-arrow1">&#155;</span>
+                        <div class="foot-col">
+                            <h3 class="foot-col-hd">
+                                <span>Usefull Links</span>
                             </h3>
-                            <ul id="foot-dropdown-one">
+                            <ul>
                                 <li class="foot-li"><a href="url">About Us </a></li>
                                 <li class="foot-li"><a href="url">Contact Us</a></li>
                                 <li class="foot-li"><a href="url">Privacy</a></li>
@@ -484,11 +315,11 @@
                                 <li class="foot-li"><a href="url">Track Your Order</a></li>
                             </ul>
                         </div>
-                        <div class="foot-col" id="foot-drop2">
+                        <div class="foot-col">
                             <h3 class="foot-col-hd">
-                                <span>Categories</span><span class="foot-arrow2">&#155;</span>
+                                <span>Categories</span>
                             </h3>
-                            <ul id="foot-dropdown-two">
+                            <ul>
                                 <li class="foot-li"><a href="url">Everyone </a></li>
                                 <li class="foot-li"><a href="url">Baby</a></li>
                                 <li class="foot-li"><a href="url">women</a></li>
@@ -499,11 +330,11 @@
                                 <li class="foot-li"><a href="url">Men</a></li>
                             </ul>
                         </div>
-                        <div class="foot-col" id="foot-drop3">
+                        <div class="foot-col">
                             <h3 class="foot-col-hd">
-                                <span>My Account</span><span class="foot-arrow3">&#155;</span>
+                                <span>My Account</span>
                             </h3>
-                            <ul id="foot-dropdown-three">
+                            <ul>
                                 <li class="foot-li"><a href="url">Account </a></li>
                                 <li class="foot-li"><a href="url">My Orders</a></li>
                                 <li class="foot-li"><a href="url">Address</a></li>
@@ -512,11 +343,9 @@
                     </div>
                 </div>
                 <div class="foot-right">
-                    <div class="concern">
-                        Have Queries or Concern? Contact US
-                    </div>
+                    Have Queries or Concern? Contact US
                     <div class="contact-btn">
-                        <a href="/DHANVANTARI/contact.html"><button class="cnt-btn btn">Contact Us</button></a>
+                        <a href="/contact.html"><button class="cnt-btn btn">Contact Us</button></a>
                     </div>
                 </div>
             </div>
@@ -565,9 +394,8 @@
     </footer>
     <!-- Footer end -->
 
-    <script src="/DHANVANTARI/js/index.js"></script>
-    <script src="../login/login.js"></script>
-    <script src="/DHANVANTARI/js/product-slider.js"></script>
+    <!-- Script added -->
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
