@@ -135,7 +135,7 @@ spanThree[0].onclick = () => {
 
 // 4 product-slider end
 
-// resp for productslider
+// resp for productslider for mobile
 document.addEventListener('DOMContentLoaded', init);
 
 function init(){
@@ -247,3 +247,119 @@ function init(){
     }
      
 }
+
+// product slider for mobile end
+
+//product slider for tablet
+document.addEventListener('DOMContentLoaded', init);
+
+function init(){
+    let query = window.matchMedia("(max-width: 768px)");
+    if(query.matches){ 
+        // 1 product slider
+        var span = document.getElementsByClassName("product-carousel-btn");
+        var cardItem = document.querySelectorAll(".card-item");
+        var l = 0;
+        span[1].onclick = () => {
+            l++;
+            for (var i of cardItem) {
+                if (l == 0) { i.style.left = "0px";}
+                if (l == 1) { i.style.left = "-172px"; } 
+                if (l == 2) { 
+                    document.getElementById('bts').style.display = "none";
+                    i.style.left = "-358px"; }
+                if (l == 2) { 
+                    document.getElementById('link-btn').style.display = "block";
+                    document.getElementById('link-btn').onclick = function () {
+                        location.href = "product.html";
+                    };
+                    }
+            }
+        }
+        span[0].onclick = () => {
+            l--;
+            for (var i of cardItem) {
+                if (l == 0) { i.style.left = "15px"; }
+                if (l == 1) { 
+                    document.getElementById('link-btn').style.display = "none";
+                    document.getElementById('bts').style.display = "block";
+                    i.style.left = "-172px"; }
+                if (l == 2) { i.style.left = "-358px"; }
+                if (l < 0) { l = 0 }
+            }
+        }
+        // 1 product slider end
+
+        
+        // 2 product-slider
+        var spanTwo = document.getElementsByClassName("product-carousel-btn-two");
+        var cardItemTwo = document.querySelectorAll(".card-item-two");
+        var p = 0;
+        spanTwo[1].onclick = () => {
+            p++;
+            for (var j of cardItemTwo) {
+                if (p == 0) { j.style.left = "0px";}
+                if (p == 1) { j.style.left = "-172px"; } 
+                if (p == 2) { 
+                    document.getElementById('bts-two').style.display = "none";
+                    j.style.left = "-358px"; }
+                if (p == 2) { 
+                    document.getElementById('link-btn-two').style.display = "block";
+                    document.getElementById('link-btn-two').onclick = function () {
+                        location.href = "produtcs.html"
+                    };
+                    }
+            }
+        }
+        spanTwo[0].onclick = () => {
+            p--;
+            for (var j of cardItemTwo) {
+                if (p == 0) { j.style.left = "15px"; }
+                if (p == 1) { 
+                    document.getElementById('link-btn-two').style.display = "none";
+                    document.getElementById('bts-two').style.display = "block";
+                    j.style.left = "-172px"; }
+                if (p == 2) { j.style.left = "-358px"; }
+                if (p < 0) { p = 0 }
+                }
+        }
+        // 2 product-slider end
+
+        
+        // 3 product-slider 
+        var spanThree = document.getElementsByClassName("product-carousel-btn-three");
+        var cardItemThree = document.querySelectorAll(".card-item-three");
+        var q = 0;
+        spanThree[1].onclick = () => {
+            q++;
+            for (var k of cardItemThree) {
+                if (q == 0) { k.style.left = "0px";}
+                if (q == 1) { k.style.left = "-172px"; } 
+                if (q == 2) { 
+                    document.getElementById('bts-three').style.display = "none";
+                    k.style.left = "-358px"; }
+                if (q == 2) { 
+                    document.getElementById('link-btn-three').style.display = "block";
+                    document.getElementById('link-btn-three').onclick = function () {
+                        location.href = "produtcs.html"
+                    };
+                    }
+            }
+        }
+        spanThree[0].onclick = () => {
+            q--;
+            for (var k of cardItemThree) {
+                if (q == 0) { k.style.left = "15px"; }
+                if (q == 1) { 
+                    document.getElementById('link-btn-three').style.display = "none";
+                    document.getElementById('bts-three').style.display = "block";
+                    k.style.left = "-172px"; }
+                if (q == 2) { k.style.left = "-358px"; }
+                if (q < 0) { q = 0 }
+                }
+        }
+        // 3 product-slider end
+    }
+     
+}
+//product slider for tablet end

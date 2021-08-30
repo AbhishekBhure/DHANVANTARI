@@ -39,11 +39,33 @@ function slidefun(n){
 const hamburger = document.querySelector('.burger');
 const navOne = document.getElementById('nav-1');
 const navTwo = document.getElementById('nav-2');
+const outclick = document.getElementById('outclick');
 
 hamburger.addEventListener('click', ()=>{
 	navOne.classList.toggle('change');
 	navTwo.classList.toggle('show');
+	outclick.classList.toggle('show');
 });
+
+// document.onclick = function(e) {
+// 	if(e.target.id !== 'nav-2' && e.target.id !== 'burger'){
+// 		navOne.classList.remove('change');
+// 		navTwo.classList.remove('show');
+// 	}else{
+// 		if(e.target)
+// 	}
+// }
+
+document.onclick = function(e){
+	if(e.target.id == 'outclick'){
+		navOne.classList.remove('change');
+		navTwo.classList.remove('show');
+		outclick.classList.remove('show');
+	}
+}
+
+
+
 
 //srch toggle
 function toggle_srh() {
@@ -149,3 +171,28 @@ footDropThree.addEventListener('click',()=>{
 // window.addEventListener('scroll', ()=>{
 // 	document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 // });
+
+
+
+
+
+// topscrollbtn for scroll //
+
+
+const topscrollbtn = document.querySelector("#topscrollbtn");
+	window.addEventListener("scroll", ()=> {
+		if(window.pageYOffset > 100) {
+			topscrollbtn.classList.add("active");
+		} else {
+			topscrollbtn.classList.remove("active");
+		}
+	})
+topscrollbtn.addEventListener("click",function(){
+	window.scrollTo({
+		top: 0,
+		left: 0,
+		behavior: "smooth"
+	});
+});
+
+// topscrollbtn for scroll  end//
