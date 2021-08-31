@@ -5,11 +5,6 @@
 }
 
 @media only screen and (max-width: 480px){
-    body.modal-open{
-        position: fixed;
-        height: 100vh;
-        overflow-y: hidden;
-    }
     nav{
         position: sticky;
         top: 0px;
@@ -94,8 +89,7 @@
         padding: 2px 0px;
         margin: auto;
         height: 30px;
-        animation: opacity;
-        transition: all 1s ease;
+        transition: display 1s ease;
     }
     .srh-btn{
         padding: 0px 1px;
@@ -539,7 +533,35 @@
         width: 18px;
     }
 
-
+    .contact {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .contact .container-left {
+        padding: 0px 0px;
+        width: 100%;
+        border-right: none;
+    }
+   
+    .contact-container .text-center1{
+        font-size: 2rem; 
+    }
+    .contact-container .text-center2, .contact-container .text-center3{
+        font-size: 1.5rem;
+    }
+    .contact-form #message{
+        width: 100%;
+    }
+    .container-left .contact-form input{
+        padding: 0px;
+    }
+    .contact .container-right{
+        width:100%;
+    }
+    .contact .contact-form-btn{
+        padding: 5px 15px;
+    }
 }
 /* mobile resp end */
 
@@ -684,6 +706,18 @@
         position: fixed;
         transition: transform 0.5s ease;
         z-index: 54;
+    }
+    #outclick{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(64, 63, 63);
+        position: fixed;
+        display: none;
+        z-index: -1;
+        opacity: .6;
+    }
+    #outclick.show{
+        display: block;
     }
     #nav-2.show {
         transform: translateX(0%);
@@ -1078,6 +1112,15 @@ hr{
     padding:0px;
     height: 25px;
     width: 42px;
+}
+#topscrollbtn{
+    height: 30px;
+    width: 30px;
+}
+
+#topscrollbtn svg{
+    height: 20px;
+    width: 20px;
 }
 
 }

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/DHANVANTARI/css/resp.css">
     <title>Contact Us</title>
+
 </head>
 
 <body>
@@ -15,11 +17,7 @@
             margin: 0;
             box-sizing: border-box;
         }
-        .text-center {
-            text-align: center;
-            font-size: 2rem;
-        }
-        button {
+        .contact-form-btn {
             background-color: #04AA6D;
             color: white;
             padding: 12px 20px;
@@ -28,7 +26,7 @@
             cursor: pointer;
         }
 
-        button:hover {
+        .contact-form-btn:hover {
             background-color: #45a049;
         }
         .container-left {
@@ -38,7 +36,7 @@
         }
 
         .contact-form input {
-            width: 95%;
+            width: 100%;
             border: none;
             outline: none;
             color: white;
@@ -74,15 +72,25 @@
         .contact-details{
             padding: 10px 0px;
         }
+        .text-center1{
+            background-color: #89FDD2;
+            text-align: center;
+            font-size: 4rem; 
+            padding: 10px 0px;
+        }
+        .text-center2, .text-center3{
+            text-align: center;
+            font-size: 2rem;
+        }
     </style>
     <div class="contact-container">
-    <h1 class="text-center" style="background-color: #89FDD2; font-size: 4rem; padding: 10px 0px;">Contact Us</h1>
+    <h1 class="text-center1">Contact Us</h1>
         <div class="contact">
             <div class="container-left">
-                <h2 class="text-center">Send Us An Email</h2>
+                <h2 class="text-center2">Send Us An Email</h2>
                 <div class="contact-form">
                     <form action="/action_page.php">
-                        <label for="fname">Name*</label><br>
+                        <label for="fname">Name</label><br>
                         <input type="text" id="fname" name="fname" value=""><br><br>
                         <label for="Email">Email</label><br>
                         <input type="email" id="Email" name="email" value=""><br><br>
@@ -90,14 +98,13 @@
                         <input type="text" id="Contact" name="Contact" value=""><br><br>
                         <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="Write something.."></textarea><br>
-                        <br>
-                        <button type="submit" class="">Submit</button>
+                        <button type="submit" class="contact-form-btn">Submit</button>
                     </form>
                 </div>
             </div>
 
             <div class="container-right">
-                <h2 class="text-center">Contact Details</h2>
+                <h2 class="text-center3">Contact Details</h2>
                 <div class="contact-details">
                 <div>phone:+918792326522 <br>
                 (monday-saturday 9:30am to 9:30pm) <br>
