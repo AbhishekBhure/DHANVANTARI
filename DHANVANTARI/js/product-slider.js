@@ -251,18 +251,18 @@ function init(){
 // product slider for mobile end
 
 //product slider for tablet
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', initTwo);
 
-function init(){
-    let query = window.matchMedia("(max-width: 768px)");
+function initTwo(){
+    let query = window.matchMedia("(min-width: 481px)");
     if(query.matches){ 
         // 1 product slider
-        var span = document.getElementsByClassName("product-carousel-btn");
-        var cardItem = document.querySelectorAll(".card-item");
-        var l = 0;
-        span[1].onclick = () => {
+        var tab = document.getElementsByClassName("product-carousel-btn");
+        var cardItemtab = document.querySelectorAll(".card-item");
+        let l = 0;
+        tab[1].onclick = () => {
             l++;
-            for (var i of cardItem) {
+            for (let i of cardItemtab) {
                 if (l == 0) { i.style.left = "0px";}
                 if (l == 1) { i.style.left = "-172px"; } 
                 if (l == 2) { 
@@ -276,9 +276,9 @@ function init(){
                     }
             }
         }
-        span[0].onclick = () => {
+        tab[0].onclick = () => {
             l--;
-            for (var i of cardItem) {
+            for (let i of cardItemtab) {
                 if (l == 0) { i.style.left = "15px"; }
                 if (l == 1) { 
                     document.getElementById('link-btn').style.display = "none";
@@ -292,12 +292,12 @@ function init(){
 
         
         // 2 product-slider
-        var spanTwo = document.getElementsByClassName("product-carousel-btn-two");
-        var cardItemTwo = document.querySelectorAll(".card-item-two");
-        var p = 0;
-        spanTwo[1].onclick = () => {
+        var tabTwo = document.getElementsByClassName("product-carousel-btn-two");
+        var cardItemTwoTab = document.querySelectorAll(".card-item-two");
+        let p = 0;
+        tabTwo[1].onclick = () => {
             p++;
-            for (var j of cardItemTwo) {
+            for (let j of cardItemTwoTab) {
                 if (p == 0) { j.style.left = "0px";}
                 if (p == 1) { j.style.left = "-172px"; } 
                 if (p == 2) { 
@@ -311,9 +311,9 @@ function init(){
                     }
             }
         }
-        spanTwo[0].onclick = () => {
+        tabTwo[0].onclick = () => {
             p--;
-            for (var j of cardItemTwo) {
+            for (let j of cardItemTwoTab) {
                 if (p == 0) { j.style.left = "15px"; }
                 if (p == 1) { 
                     document.getElementById('link-btn-two').style.display = "none";
@@ -327,12 +327,12 @@ function init(){
 
         
         // 3 product-slider 
-        var spanThree = document.getElementsByClassName("product-carousel-btn-three");
-        var cardItemThree = document.querySelectorAll(".card-item-three");
-        var q = 0;
-        spanThree[1].onclick = () => {
+        var tabThree = document.getElementsByClassName("product-carousel-btn-three");
+        var cardItemThreeTab = document.querySelectorAll(".card-item-three");
+        let q = 0;
+        tabThree[1].onclick = () => {
             q++;
-            for (var k of cardItemThree) {
+            for (let k of cardItemThreeTab) {
                 if (q == 0) { k.style.left = "0px";}
                 if (q == 1) { k.style.left = "-172px"; } 
                 if (q == 2) { 
@@ -346,9 +346,9 @@ function init(){
                     }
             }
         }
-        spanThree[0].onclick = () => {
+        tabThree[0].onclick = () => {
             q--;
-            for (var k of cardItemThree) {
+            for (let k of cardItemThreeTab) {
                 if (q == 0) { k.style.left = "15px"; }
                 if (q == 1) { 
                     document.getElementById('link-btn-three').style.display = "none";

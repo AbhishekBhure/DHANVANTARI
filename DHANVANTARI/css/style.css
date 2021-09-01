@@ -440,6 +440,73 @@ nav{
     margin-top: 0px;
 }
 
+/* contact css */
+.contact-form-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form-btn:hover {
+    background-color: #45a049;
+}
+.container-left {
+    padding: 0px 20px;
+    width: 50%;
+    border-right: 1px solid gray;
+}
+
+.contact-form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    /* color: white; */
+    font-size: 20px;
+    padding: 5px 10px;
+    background: none;
+    background: rgba(255, 255, 255, 0.08);
+    /* border: 1px solid black; */
+    border-bottom: 2px solid seagreen;
+}
+
+.container-right {
+    width: 50%;
+    padding: 0px 20px;
+}
+
+#message {
+    display: block;
+    height: 183px;
+    width: 100%;
+    resize: none;
+}
+
+.contact {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.contact-form{
+    padding: 10px 0px;
+}
+.contact-details{
+    padding: 10px 0px;
+}
+.text-center1{
+    background-color: #89FDD2;
+    text-align: center;
+    font-size: 4rem; 
+    padding: 10px 0px;
+}
+.text-center2, .text-center3{
+    text-align: center;
+    font-size: 2rem;
+}
+/* contact css end */
 
 
 
