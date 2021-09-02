@@ -254,7 +254,7 @@ function init(){
 document.addEventListener('DOMContentLoaded', initTwo);
 
 function initTwo(){
-    let query = window.matchMedia("(min-width: 481px)");
+    let query = window.matchMedia("(max-width: 768px)");
     if(query.matches){ 
         // 1 product slider
         var tab = document.getElementsByClassName("product-carousel-btn");

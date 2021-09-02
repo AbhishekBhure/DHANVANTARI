@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 
 *{
     margin: 0;
@@ -164,16 +164,18 @@ nav{
     margin: 0px 25px;
     list-style: none;
     cursor: pointer;
+    font-family: var(--font2);
     /* overflow: hidden; */
 }
 .category-home{
     position: relative;
     padding-top: 4px;
     list-style: none;
-   margin: 4px 30px 0px 30px;
+    margin: 4px 30px 0px 30px;
+    font-family: var(--font2);
+
 }
 .category-home a{
-    font-family: var(--font2);
     text-decoration: none;
     color: black;
 }
@@ -196,7 +198,7 @@ nav{
     left: 0%;
     top: 84%;
     width: 0%;
-    height: 6%;
+    height: 4%;
     background-color: #000;
     transition: 0.4s;
 }
@@ -208,7 +210,6 @@ nav{
 .dropdown{
     position: relative;
     display: inline-block;
-    font-family: var(--font2);
     user-select: none;
     padding: 9px 0px;
     /* overflow: hidden; */
@@ -269,14 +270,12 @@ nav{
 	font-size: 80px;
 	padding: 15px;
 	cursor: pointer;
-	color: #00a7ff;
+	color: #141414;
 	transition: 0.1s;
 	user-select: none;
 }
 
-.prev:hover, .next:hover{
-	color: #ff9933; /* blue */
-}
+
 .next{
 	right: 0;
 }
@@ -355,7 +354,7 @@ nav{
 .lines p{
     padding: 3px 4px;
     font-size: 17px;
-    font-family: 'Amiri', serif;
+    font-family: var(--font2);
 }
 /* css for cards end */
 

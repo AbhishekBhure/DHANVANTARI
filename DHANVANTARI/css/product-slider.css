@@ -78,7 +78,7 @@ text-align: right;
     /* top: 50%; */
     text-align: right;
     display: none;
-    color: blue;
+    color: grey;
 }
 
 
@@ -103,7 +103,7 @@ text-align: right;
     margin: 0px 23px;
     position: relative;
     text-align: center;
-    background-color: bisque;
+    background-color: rgba(252, 252, 252, 0.867);
     left: -18px;
     transition: 0.5s;
 }
@@ -140,7 +140,7 @@ text-align: right;
 .lines p{
     padding: 3px 4px;
     font-size: 17px;
-    font-family: 'Amiri', serif;
+    /* font-family: 'Amiri', serif; */
 }
 .add-btn{
     border: none;

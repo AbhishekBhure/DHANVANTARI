@@ -1,7 +1,7 @@
 :root{
     --main-bg-color: #ffac12;
     --font1: 'Benne', serif;
-    --font2: 'Lato', sans-serif;
+    --font2: 'Source Sans Pro', sans-serif;
 }
 
 .display{
@@ -136,6 +136,7 @@ svg:not(:root) {
     font-size: 18px;
     margin: auto;
     border-radius: 5px;
+    font-family: var(--font2);
   }
 .cart-number{
     position: absolute;
